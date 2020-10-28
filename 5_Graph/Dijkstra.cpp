@@ -15,7 +15,7 @@ void Dijkstra(MGraph g, int v){
     }
     for (i=1; i<g.n; i++){  // 循环n-1次, 记录S集合中的顶点个数, 为n时结束
         mindis = 32767; k =-1;  // k用于记录选中的顶点的编号
-        for (j=0; j,g.n; j++){  // (2)选取不在S中且具有最小距离的顶点k加入S集合中
+        for (j=0; j<g.n; j++){  // (2)选取不在S中且具有最小距离的顶点k加入S集合中
             if (s[j] == 0 && dist[j]<mindis){  
                 k=j;
                 mindis = dist[j];
